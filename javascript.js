@@ -16,7 +16,6 @@ function getWeather(){
       return response.json();
     })
     .then(data => {
-        console.log(data)
         error.innerHTML=""
         info.style.display="block"
         temperature.innerHTML=Math.round(data.main.temp) + "°C"
